@@ -19,6 +19,10 @@ public class Runigram {
 		image = flippedHorizontally(tinypic);
 		System.out.println();
 		print(image);
+
+		image = flippedVertically(tinypic);
+		System.out.println();
+		print(image);
 		
 		//// Write here whatever code you need in order to test your work.
 		//// You can continue using the image array.
