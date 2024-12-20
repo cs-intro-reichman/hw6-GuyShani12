@@ -116,7 +116,7 @@ public class Runigram {
 	// lum = 0.299 * r + 0.587 * g + 0.114 * b, and returns a Color object consisting
 	// the three values r = lum, g = lum, b = lum.
 	private static Color luminance(Color pixel) {
-		int lum = (int)(0.299 * pixel.getRed() + 0.587 * pixel.getGreen() + 0.114 *pixel.getBlue());
+		int lum = (int)(0.299 * pixel.getRed() + 0.587 * pixel.getGreen() + 0.114 * pixel.getBlue());
 		Color newColor =  new Color(lum, lum, lum);
 		return newColor;
 	}
@@ -145,8 +145,8 @@ public class Runigram {
 		int originHeight = image.length;
 		int originWiidth = image[0].length;
 
-		double scaledHeight = originHeight / height;
-		double scaledWidth = originWiidth / height;
+		double scaledHeight = (double) originHeight / height;
+		double scaledWidth = (double) originWiidth / height;
 		for (int i = 0; i < height; i++)
 		{
 			for (int j = 0; j < width; j++)
