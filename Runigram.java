@@ -141,7 +141,7 @@ public class Runigram {
 		int originWiidth = image[0].length;
 
 		double scaledHeight = (double) originHeight / height;
-		double scaledWidth = (double) originWiidth / height;
+		double scaledWidth = (double) originWiidth / width;
 		for (int i = 0; i < height; i++)
 		{
 			for (int j = 0; j < width; j++)
